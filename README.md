@@ -6,9 +6,9 @@
 
 Defeat Carlo Conti è una web app quiz creata interamente con React.js. Consiste in un quiz di 10 domande, nel quale ogni domanda contiene 4 risposte, ma solo una è corretta! Hai a disposizione 20 secondi per rispondere ad ogni domanda, se il timer arriva a 0 oppure sbagli la risposta dovrai riniziare da capo.
 
-### Avvio progetto
+## Avvio progetto
 
-#### Fake server
+### Fake server
 
 Questa quiz app utilizza il pacchetto npm [JSON Server](https://www.npmjs.com/package/json-server) che permette di creare un mock. Esso in questo caso simula l'arrivo di domande e risposte da un fake-server esterno in formato **.json**. Per visualizzare correttamente le domande digitare la seguente istruzione all'interno del terminal (non è obbligatorio l'utilizzo della porta 8000, ma è consigliato):
 
@@ -16,7 +16,7 @@ Questa quiz app utilizza il pacchetto npm [JSON Server](https://www.npmjs.com/pa
 npx json-server --watch data/dbQuestions.json --port 8000
 ```
 
-#### Visualizzare il progetto
+### Visualizzare il progetto
 
 Una volta installato l'npm Json Server, per visualizzare e poter giocare all'interno del browser, inserire all'interno del terminal il seguente comando:
 
