@@ -18,7 +18,7 @@ npm install
 
 ### Fake server
 
-Questa quiz app utilizza il pacchetto npm [JSON Server](https://www.npmjs.com/package/json-server) che permette di creare un mock. Esso in questo caso simula l'arrivo di domande e risposte da un fake-server esterno in formato **.json**. Per visualizzare correttamente le domande digitare la seguente istruzione all'interno del terminal (non è obbligatorio l'utilizzo della porta 8000, ma è consigliato):
+Questa quiz app utilizza il pacchetto npm [JSON Server](https://www.npmjs.com/package/json-server) che permette di creare un mock. Esso in questo caso simula l'arrivo di domande e risposte da un fake-server esterno in formato **.json**. Per visualizzare correttamente le domande digitare la seguente istruzione all'interno del terminal:
 
 ```
 npx json-server --watch data/dbQuestions.json --port 8000
