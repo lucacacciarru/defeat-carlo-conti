@@ -1,0 +1,147 @@
+//^ Links fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Poppins&display=swap');
+
+//& Varibles
+//Color
+$mainBlack: #242629;
+$mainWhite: #fafafa;
+$cardBg: #16161a;
+$secondary: #7f5af0;
+$secondaryHover: #6a4bc4;
+$correct: #2cb67d;
+$wrong: #e45858;
+$paragraph: #94a1b2;
+
+//border-radius
+$border: 10px;
+
+//Fonts
+$fontTitle: 'Montserrat', sans-serif;
+$fontBody: 'Poppins', sans-serif;
+
+//font-size
+$titleSize: 4rem;
+$bodySize: 1.2rem;
+$timerSize: 1.5rem;
+
+//interlines
+$lineParagraph: 30px;
+
+//* Mixin
+//flex container
+@mixin flex($direction, $align, $justify) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+//For responsive design
+@mixin breakpoint($point) {
+  @if $point==tablet-landscape {
+    @media (min-width: 900px) and (max-width: 1199px) {
+      @content;
+    }
+  } @else if $point==tablet-portait {
+    @media (min-width: 600px) and (max-width: 899px) {
+      @content;
+    }
+  } @else if $point==mobileonly {
+    @media only screen and (max-width: 599px) {
+      @content;
+    }
+  }
+}
+
+//? Global Style
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  @include breakpoint(mobileonly) {
+    font-size: 82%;
+  }
+  @include breakpoint(tablet-portait) {
+    font-size: 85%;
+  }
+}
+
+body {
+  background: $mainBlack;
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h4,
+h3 {
+  color: $mainWhite;
+  font-family: $fontTitle;
+}
+
+h1 {
+  font-size: $titleSize;
+
+  @include breakpoint(mobileonly) {
+    font-size: 4rem;
+  }
+}
+
+h3 {
+  font-weight: 400;
+}
+
+h4 {
+  font-size: $timerSize;
+  font-weight: 400;
+}
+
+li {
+  font-family: $fontBody;
+  font-size: $bodySize;
+}
+
+p {
+  font-size: $bodySize;
+  color: $paragraph;
+  font-family: $fontBody;
+}
+
+button {
+  appearance: none;
+  background: none;
+  border: none;
+  font-size: $bodySize;
+  font-family: $fontBody;
+  border-radius: $border;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &.cta {
+    background: $secondary;
+    color: $mainWhite;
+    padding: 3rem 3rem;
+
+    &:hover {
+      background: $secondaryHover;
+    }
+    &.inverse {
+      background: $mainBlack;
+      color: $secondary;
+      border: 2px solid $secondary;
+
+      &:hover {
+        background: $secondaryHover;
+        color: $mainWhite;
+        border: 2px solid transparent;
+      }
+    }
+  }
+}

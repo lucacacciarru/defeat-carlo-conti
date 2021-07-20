@@ -1,0 +1,59 @@
+{
+  "questions": [
+    {
+      "question": "Qual è la radice della parola freddo?",
+      "answers": ["Do", "Fred", "Red", "Fre"],
+      "correctAnswers": "B"
+    },
+    {
+      "question": "Come venne chiamato l'impero di Carlo magno?",
+      "answers": [
+        "Sacro Romano Impero",
+        "Impero Francese",
+        "Impero Sacro",
+        "Impero Franco"
+      ],
+      "correctAnswers": "A"
+    },
+    {
+      "question": "Quando si festeggia la festa del papà?",
+      "answers": ["19 Aprile", "29 Marzo", "19 Marzo", "9 Marzo"],
+      "correctAnswers": "C"
+    },
+    {
+      "question": "Chi è Fernando Alonso?",
+      "answers": ["Cantante", "Calciatore", "Nuotatore", "Pilota"],
+      "correctAnswers": "D"
+    },
+    {
+      "question": "Chi tra questi scienziati ha unificato le leggi dell'elettromagnetismo?",
+      "answers": ["Einstein", "Maxwell", "Plank", "Rutherford"],
+      "correctAnswers": "B"
+    },
+    {
+      "question": "Come si chiama la pesciolina smemorata de 'Alla ricerca di Nemo?",
+      "answers": ["Dory", "Molly", "Anastasia", "Dolly"],
+      "correctAnswers": "A"
+    },
+    {
+      "question": "Come si chiama la catena di ristorazione autostradale più famosa in Italia?",
+      "answers": ["MyChef", "Autogrill", "Bauli", "Ristop"],
+      "correctAnswers": "B"
+    },
+    {
+      "question": "Chi era Francesco Petrarca?",
+      "answers": ["Un mendicante", "Un prete", "Un poeta", "Un pittore"],
+      "correctAnswers": "C"
+    },
+    {
+      "question": "In quale nazione può degustare la paella?",
+      "answers": ["Portogallo", "Brasile", "Francia", "Spagna"],
+      "correctAnswers": "D"
+    },
+    {
+      "question": "Dove nasce lo stile artistico impressionistico?",
+      "answers": ["Francia", "Italia", "Germania", "Brasile"],
+      "correctAnswers": "A"
+    }
+  ]
+}

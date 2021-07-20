@@ -1,0 +1,67 @@
+@import '../../global.scss';
+
+.help-container {
+  @include flex(column, center, space-around);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+  height: 20vh;
+
+  @include breakpoint(mobileonly) {
+    top: 85%;
+    bottom: 0;
+    transform: none;
+  }
+  @include breakpoint(tablet-portait) {
+    top: 86%;
+    bottom: 0;
+    transform: none;
+  }
+
+  h2 {
+    color: $secondary;
+    font-weight: normal;
+    @include breakpoint(mobileonly) {
+      display: none;
+    }
+    @include breakpoint(tablet-portait) {
+      display: none;
+    }
+  }
+
+  .help {
+    @include flex(row, center, center);
+    height: 80px;
+    width: 80px;
+    background: $secondary;
+    margin: 2rem 0;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+
+    @include breakpoint(mobileonly) {
+      width: 100vw;
+      border-radius: 0;
+      transform: translate(0%, 0%);
+    }
+    @include breakpoint(tablet-portait) {
+      width: 100vw;
+      border-radius: 0;
+      transform: translate(0%, 0%);
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      @include breakpoint(mobileonly) {
+        transform: none;
+      }
+    }
+    &:disabled {
+      opacity: 0.7;
+      cursor: no-drop;
+      &:hover {
+        transform: scale(1);
+      }
+    }
+  }
+}

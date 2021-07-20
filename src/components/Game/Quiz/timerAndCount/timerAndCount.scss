@@ -1,0 +1,37 @@
+@import '../../../global.scss';
+
+//? Counter-timer
+.answer-counter-timer {
+  width: 100%;
+  @include flex(column, center, space-between);
+  min-height: 20vh;
+  padding: 3rem;
+
+  @include breakpoint(mobileonly) {
+    margin-top: 2rem;
+    padding: 0;
+  }
+
+  @include breakpoint(tablet-landscape) {
+    padding: 2rem 0;
+  }
+
+  .timer {
+    width: 70px;
+    height: 70px;
+    @include flex(row, center, center);
+    margin-top: 2rem;
+    border: 2px dashed $secondary;
+    border-radius: 50%;
+
+    @include breakpoint(mobileonly) {
+      width: 60px;
+      height: 60px;
+    }
+
+    h3 {
+      color: $secondary;
+      font-size: 1.5rem;
+    }
+  }
+}

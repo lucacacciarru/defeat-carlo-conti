@@ -1,0 +1,17 @@
+@import '../global.scss';
+
+.game-container {
+  min-height: 100vh;
+  position: relative;
+
+  .exit-game {
+    position: absolute;
+    left: 2%;
+    top: 5%;
+
+    @include breakpoint(mobileonly) {
+      left: 20px;
+      top: 40px;
+    }
+  }
+}

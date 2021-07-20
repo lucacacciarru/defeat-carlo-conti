@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import Win from './components/finish/Win';
+import Start from './components/menu/start/Start';
+import Game from './components/Game/Game';
+import './components/global.scss';
+
 
 function App() {
+  //Utilizzo degli state per renderzirrare i vari componenti in base ai vari step
+  //Cambiando il valore di step verranno visualizzati i componenti voluti
+  const [step, setStep] = useState("menu")
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {step === "menu" && < Start step={step} setStep={setStep} />}
+      {step === "game" && < Game step={step} setStep={setStep} />}
+      {step === "win" && < Win setStep={setStep} />}
     </div>
   );
 }

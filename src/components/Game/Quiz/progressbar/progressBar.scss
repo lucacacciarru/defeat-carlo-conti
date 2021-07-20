@@ -1,0 +1,15 @@
+@import '../../../global.scss';
+
+//?Progress bar
+.progress-bar {
+  width: 100%;
+  background: $cardBg;
+  height: 13px;
+  &-user {
+    width: 10%;
+    height: 100%;
+    background: $secondary;
+    border-radius: 0 $border $border 0;
+    transition: all 0.5s ease-out;
+  }
+}
