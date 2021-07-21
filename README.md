@@ -10,7 +10,7 @@ Defeat Carlo Conti è una web app quiz creata interamente con React.js. Consiste
 
 ### Scaricare package e dependencies
 
-Per installare i vari package e dependecies che permettono al progetto di funzionare digitare tale comanda nel terminale:
+Installare i vari package e dependecies, che permettono al progetto di funzionare, digitare il seguende comando nel terminale:
 
 ```
 npm install
